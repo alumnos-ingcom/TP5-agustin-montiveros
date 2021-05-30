@@ -7,36 +7,19 @@
 # Reemplazar por las funciones del ejercicio
 
 def numeroPerfecto(numero):
-    numeroGuardado = numero
-    for i in range(2, numeroGuardado):
-        numero = numeroGuardado / i
-        numeroIngresado = numero
-        numeroMitad= numero / 2
-        resultado= numeroMitad + int(numeroMitad)
-        if resultado == numeroIngresado:
-            print(int(numeroIngresado), end=",")
-        elif numero == 7:
-            print(numero)
-        elif numero == 31:
-            print(numero)
-        elif numero == 127:
-            print(numero)
-    print("1")
-    
-
-
-        
-        
-
-
-
+    numeroGuardado = 0
+    for i in range(1, numero):
+        if numero % i == 0:
+            numeroGuardado = numeroGuardado + i
+    return numeroGuardado == numero
 
 
 def prueba():
     numero = int(input("Ingrese un numero: "))
-    print(numeroPerfecto(numero))
+    resultado = numeroPerfecto(numero)
+    print("Es un numero perfecto? ", resultado)
 
-    pass
+
 
 if __name__ == "__main__":
     prueba()
