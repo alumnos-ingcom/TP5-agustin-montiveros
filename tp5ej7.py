@@ -14,9 +14,6 @@ def distancia_entre_numeros(numero, numero_dos):
         distancia = numero_dos - numero
         return distancia
 
-
-
-
 def prueba():
     numero = int(input("Ingresar primer numero: "))
     numero_dos = int(input("Ingresar segundo numero: "))
