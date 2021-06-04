@@ -6,18 +6,20 @@
 
 # Reemplazar por las funciones del ejercicio
 
-def fibonacci(n):
-    a= 0
-    b= 1
-    while a < n:       
-        print(a, end=",")
-        a, b = b, a+b
+def fibonacci(numero):
+    primer_valor = 0
+    segundo_valor = 1
+    while primer_valor < numero:       
+        secuencia = print(primer_valor, end=",")
+        primer_valor, segundo_valor = segundo_valor, primer_valor+segundo_valor
+    return secuencia
     
 
 def prueba():
-        n= int(input("Ingrese el numero limite de fibonacci: "))
-        print(fibonacci(n))
-        pass
+        numero= int(input("Ingrese el numero limite de fibonacci: "))
+        resultado = fibonacci(numero)
+
+
 
 if __name__ == "__main__":
     prueba()
