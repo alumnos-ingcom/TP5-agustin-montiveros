@@ -6,7 +6,7 @@
 
 # Reemplazar por las funciones del ejercicio
 
-def numeroPerfecto(numero):
+def numero_perfecto(numero):
     numeroGuardado = 0
     for i in range(1, numero):
         if numero % i == 0:
@@ -16,7 +16,7 @@ def numeroPerfecto(numero):
 
 def prueba():
     numero = int(input("Ingrese un numero: "))
-    resultado = numeroPerfecto(numero)
+    resultado = numero_perfecto(numero)
     print("Es un numero perfecto? ", resultado)
 
 
