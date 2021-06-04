@@ -14,7 +14,7 @@ def codificar(texto):
     ajuste = int(input("Ingresar cantidad de posiciones a ajustar: "))
     for i in range(len(texto)):
         codificado = ord(texto[i])
-        mensaje = print(codificado + ajuste) 
+        mensaje = print(codificado + ajuste)
     return mensaje
 
 def descodificar(texto):
@@ -24,7 +24,7 @@ def descodificar(texto):
     return desco
     
 def prueba():
-    texto = (input("Ingresar mensaje: "))
+    texto = list(input("Ingresar mensaje: "))
     resultado = codificar(texto)
 
     
