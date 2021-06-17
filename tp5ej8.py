@@ -32,4 +32,3 @@ def prueba():
     print(resultadoDes)
 if __name__ == "__main__":
     prueba()
-
