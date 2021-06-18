@@ -7,15 +7,19 @@
 # Reemplazar por las funciones del ejercicio
 # 
 def datos(lista):
-    limite_a = int(input("Ingresar la posicion del primer dato que quiere promediar: "))
-    limite_b = int(input("Ingresar la posicion del ultimo dato que quiere promediar: "))
-    nueva_lista = lista[limite_a:limite_b]
-    rango = limite_b - limite_a
-    print("Estos son los datos seleccionados: ", nueva_lista)
-    while len(nueva_lista) == rango:
-        suma_lista= (sum(nueva_lista)) / len(nueva_lista)
-        imprimir = print("El promedio de los datos seleccionados es: ", suma_lista)
-        return imprimir
+    rango_p= int(input("Cuantos numeros desea promediar: "))
+    limite_a = rango_p - rango_p
+    limite_b = rango_p
+    promedios = []
+    for n in range(len(lista)):
+        nueva_lista = lista[limite_a:limite_b]
+        print("Estos son los datos seleccionados: ", nueva_lista)
+        suma_lista =(sum(nueva_lista)) / len(nueva_lista)
+        promedios.append(suma_lista)
+        print("Lista de promedios acumulados: ", promedios)
+        limite_a = limite_a+1
+        limite_b = limite_b+1
+        
     
 def lista_a(total_numeros):
     numeros=[]
